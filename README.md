@@ -46,10 +46,9 @@ The `Restaurant` class represents a restaurant that can be reviewed by customers
 
 - `Restaurant customers(self)` - Returns a unique list of all customers who have reviewed the restaurant.
 
-- `Restaurant average_star_rating(self)`
-  - Returns the average star rating for the restaurant based on its reviews.
+- `Restaurant average_star_rating(self)` - Returns the average star rating for the restaurant based on its reviews.
   
-  
+
 
 ## Review Class
 
@@ -66,7 +65,7 @@ The `Review` class represents a review written by a customer for a restaurant.
 - `Review restaurant(self)` - Returns the restaurant object for that given review.
 
 - `Review all()` - Returns a list of all reviews.
-  
+  <br>
 
 ---
 
