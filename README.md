@@ -75,7 +75,7 @@ You can use this system to manage customers, restaurants, and their reviews. Cre
 
 Here are some example usages of the Restaurant Review System:
 
-```python
+```
 # Create customers
 customer1 = Customer("Alvin", "Ombito")
 customer2 = Customer("Susan", "Wambui")
@@ -84,17 +84,17 @@ customer2 = Customer("Susan", "Wambui")
 restaurant1 = Restaurant("Bao Box")
 restaurant2 = Restaurant("Faugo Gauchi")
 
-# Customers leave reviews
+# Customers reviews
 customer1.add_review(restaurant1, 5)
 customer2.add_review(restaurant1, 4)
 customer2.add_review(restaurant2, 3)
 
-# Retrieve restaurant information
+# Restaurant details
 restaurant1_name = restaurant1.name()
 average_rating = restaurant1.average_star_rating()
 customer_list = restaurant1.customers()
 
-# Retrieve customer information
+# Customer details
 customer1_name = customer1.full_name()
 customer1_reviews = customer1.restaurants()
 num_reviews = customer1.num_reviews()
