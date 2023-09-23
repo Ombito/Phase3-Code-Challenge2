@@ -6,11 +6,11 @@ The Restaurant Review System is a Python project that provides a set of classes 
 
 ## Customer Class
 
-The `Customer` class represents a customer who can leave reviews for restaurants.
+The Customer class represents a customer who can leave reviews for restaurants.
 
 ### Methods:
 
-- `Customer __init__(self, name: str, family_name: str)` - Initializes a customer with a given `name` and `family_name`.
+- `Customer __init__(self, name: str, family_name: str)` - Initializes a customer with a given name and family_name.
 
 - `Customer given_name(self)` - Returns the customer's given name.
 
@@ -34,11 +34,11 @@ The `Customer` class represents a customer who can leave reviews for restaurants
 
 ## Restaurant Class
 
-The `Restaurant` class represents a restaurant that can be reviewed by customers.
+The Restaurant class represents a restaurant that can be reviewed by customers.
 
 ### Methods:
 
-- `Restaurant __init__(self, name: str)` - Initializes a restaurant with a given `name`.
+- `Restaurant __init__(self, name: str)` - Initializes a restaurant with a given name.
 
 - `Restaurant name(self)` - Returns the restaurant's name.
 
@@ -52,7 +52,7 @@ The `Restaurant` class represents a restaurant that can be reviewed by customers
 
 ## Review Class
 
-The `Review` class represents a review written by a customer for a restaurant.
+The Review class represents a review written by a customer for a restaurant.
 
 ### Methods:
 
@@ -65,7 +65,7 @@ The `Review` class represents a review written by a customer for a restaurant.
 - `Review restaurant(self)` - Returns the restaurant object for that given review.
 
 - `Review all()` - Returns a list of all reviews.
-  <br>
+  <br><br>
 
 ---
 
