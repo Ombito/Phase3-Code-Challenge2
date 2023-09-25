@@ -4,7 +4,7 @@ class Restaurant:
     def __init__(self, name):
         self._name = name
         self._reviews = []
-        Restaurant.all_restaurants.append(self)
+        Restaurant.total_restaurants.append(self)
 
     def name(self):
         return self._name   
