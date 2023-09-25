@@ -10,7 +10,7 @@ The Customer class represents a customer who can leave reviews for restaurants.
 
 ### Methods:
 
-- `Customer __init__(self, name: str, family_name: str)` - Initializes a customer with a given name and family_name.
+- `Customer __init__(self, given_name: str, family_name: str)` - Initializes a customer with a given name and family_name.
 
 - `Customer given_name(self)` - Returns the customer's given name.
 
@@ -18,17 +18,19 @@ The Customer class represents a customer who can leave reviews for restaurants.
 
 - `Customer full_name(self)` - Returns the full name of the customer, with the given name and family name concatenated in Western style.
 
-- `Customer all()` - Returns a list of all customer instances.
+- `Customer add_review(self, restaurant: Restaurant, rating: int)` - Given a restaurant object and a star rating (as an integer), creates a new review and associates it with that customer and restaurant.
+  
+- `Customer total_customers()` - Returns a list of all customer instances.
 
-- `Customer restaurants(self)` - Returns a unique list of all restaurants that the customer has reviewed.
+<!-- - `Customer restaurants(self)` - Returns a unique list of all restaurants that the customer has reviewed. -->
 
-- `Customer num_reviews(self)` - Returns the total number of reviews that a customer has authored.
+<!-- - `Customer num_reviews(self)` - Returns the total number of reviews that a customer has authored.
 
 - `Customer find_by_name(cls, name: str)` - Class method: Given a string of a full name, returns the first customer whose full name matches.
 
-- `Customer find_all_by_given_name(cls, name: str)` - Class method: Given a string of a given name, returns a list containing all customers with that given name.
+- `Customer find_all_by_given_name(cls, name: str)` - Class method: Given a string of a given name, returns a list containing all customers with that given name. -->
 
-- `Customer add_review(self, restaurant: Restaurant, rating: int)` - Given a restaurant object and a star rating (as an integer), creates a new review and associates it with that customer and restaurant.
+
   
 
 
@@ -44,10 +46,8 @@ The Restaurant class represents a restaurant that can be reviewed by customers.
 
 - `Restaurant reviews(self)` - Returns a list of all reviews for that restaurant.
 
-- `Restaurant customers(self)` - Returns a unique list of all customers who have reviewed the restaurant.
+- `Restaurant add_review(self, customer, rating)` - Returns a unique list of all customers who have reviewed the restaurant.
 
-- `Restaurant average_star_rating(self)` - Returns the average star rating for the restaurant based on its reviews.
-  
 
 
 ## Review Class
@@ -64,7 +64,7 @@ The Review class represents a review written by a customer for a restaurant.
 
 - `Review restaurant(self)` - Returns the restaurant object for that given review.
 
-- `Review all()` - Returns a list of all reviews.
+- `Review all_review()` - Returns a list of all reviews.
   <br><br>
 
 ---

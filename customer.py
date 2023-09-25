@@ -9,10 +9,10 @@ class Customer:
         self.reviews = []
         Customer.all_customers.append(self)
 
-    def first_name(self):
+    def given_name(self):
         return self.given_name
     
-    def last_name(self):
+    def family_name(self):
         return self.family_name
     
     def full_name(self):
