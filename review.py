@@ -22,10 +22,10 @@ class Review:
 
 review1 = Review("John", "Bao Box", 4)
 review2 = Review("Becky", "Blue room", 4)
-total_reviews = len(Review.all_review())
+total_reviews = Review.all_review()
 
-
-print(review1.restaurant())
+print(review1.review_rating())
 print(review2.customer())
 print(total_reviews)
+
 
